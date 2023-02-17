@@ -29,6 +29,11 @@ Probamos la aplicación en dos sistemas operativos para comprobar que corriera c
 ![captura 3 windows](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20pantalla%202023-02-16%20213945.png)
 ![captura 4 windows](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20pantalla%202023-02-16%20214204.png)
 ### MACOS
+![captura 1 MAC](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20Pantalla%202023-02-16%20a%20la(s)%209.59.52%20p.m..png)
+![captura 2 MAC](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20Pantalla%202023-02-16%20a%20la(s)%2010.00.17%20p.m..png)
+![captura 3 MAC](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20Pantalla%202023-02-16%20a%20la(s)%2010.00.56%20p.m..png)
+![captura 4 MAC](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20Pantalla%202023-02-16%20a%20la(s)%209.59.20%20p.m..png)
+
 ## Requisitos 📋
 - Java: Ambiente de desarrollo
 - Maven: Administrador del ciclo de vida del Proyecto
