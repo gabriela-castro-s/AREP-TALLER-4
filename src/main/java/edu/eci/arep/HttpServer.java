@@ -1,7 +1,10 @@
 package edu.eci.arep;
 
+import java.lang.reflect.Method;
 import java.net.*;
 import java.io.*;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
 import edu.eci.arep.Spark.*;
@@ -28,9 +31,24 @@ public final class HttpServer {
      * @param services mapa de servicios que vamos a utilizar
      * @throws IOException
      */
-    public void run(String[] args, Map<String, Service> services) throws IOException {
+    public void run(String[] args, Map<String, Service> services) throws IOException, Exception {
         System.out.println("Server running ...");
         ServerSocket serverSocket = null;
+        Class<?> c = Class.forName(args[0]);
+        Class[] argTypes = new Class[]{String[].class};
+        Method main = c.getDeclaredMethod("main", argTypes);
+        String[] mainArgs = Arrays.copyOfRange(args, 1, args.length);
+        System.out.format("invoking %s.main()%n", c.getName());
+        main.invoke(null, (Object) mainArgs);
+        HashMap<String, Method> service = new HashMap<>();
+        for (String a : args){
+            for (Method m : Class.forName(a).getMethods()) {
+                if (m.isAnnotationPresent(Run.class)) {
+                    m.invoke(null);
+                    //service.put(m.getAnnotation().getValue());
+                }
+            }
+        }
         try {
             serverSocket = new ServerSocket(35000);
 
