@@ -19,10 +19,6 @@ public class FileReader implements Service {
             type = "html";
             Path filePath = Paths.get(HOME);
             String fileNames = "Directorios y archivos disponibles:<br>";
-            /**
-             * En este try listamos todos los archivos dentro de un directorio para
-             * mostrarlos
-             */
             try (DirectoryStream<Path> directoryStream = Files.newDirectoryStream(filePath)) {
                 for (Path files : directoryStream) {
                     if (!Files.isHidden(files)) {
@@ -56,9 +52,6 @@ public class FileReader implements Service {
                     file = fileNames;
                 } else if (Files.isRegularFile(filePath)) {
                     type = filePath.toString().split("\\.")[1];
-                    /**
-                     * En este try leemos un archivo como lista de bytes y lo guardamos como string
-                     */
                     try {
                         byte[] bs = Files.readAllBytes(filePath);
                         file = new String(bs);

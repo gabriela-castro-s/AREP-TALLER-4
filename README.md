@@ -2,7 +2,8 @@
 
 ## Información del programa 💾
 
-//Este repositorio cuenta con un servidor web que permite realizar busquedas y leer archivos de su disco local y retornar los que sean solicitados.
+Este repositorio cuenta con un servidor web que permite realizar busquedas y leer archivos de su disco local y retornar los que sean solicitados.
+Fue desarrollado haciendo uso de la herramienta Spark de java.
 
 ## Para hacer uso de la aplicación 💻
 
@@ -12,14 +13,22 @@
 ```
 2. Ejecución de la aplicación, sobre la carpeta donde se encuentran los archivos haciendo uso del comando:
 ```
-   mvn clean package exec:java -D "exec.mainClass"="edu.eci.arep.HttpServer"
+   mvn clean package exec:java -D "exec.mainClass"="edu.eci.arep.App"
 ```
-3. Visualización de la aplicación usando el enlace http://localhost:35000 desde un buscador web, se recomienda usar Mozilla Firefox.
+3. Visualización de la aplicación usando el enlace http://localhost:35000/apps desde un buscador web, se recomienda usar Mozilla Firefox.
 
 4. Generación de JavaDoc con el comando:
 ```
     mvn javadoc:javadoc
 ```
+## Pruebas 🤓
+Probamos la aplicación en dos sistemas operativos para comprobar que corriera con normalidad en ambos.
+### Windows
+![captura 1 windows](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20pantalla%202023-02-16%20213538.png)
+![captura 2 windows](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20pantalla%202023-02-16%20213859.png)
+![captura 3 windows](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20pantalla%202023-02-16%20213945.png)
+![captura 4 windows](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20pantalla%202023-02-16%20214204.png)
+### MACOS
 ## Requisitos 📋
 - Java: Ambiente de desarrollo
 - Maven: Administrador del ciclo de vida del Proyecto
