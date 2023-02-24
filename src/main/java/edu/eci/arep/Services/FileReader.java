@@ -2,23 +2,23 @@ package edu.eci.arep.Services;
 
 import java.io.IOException;
 import java.nio.file.*;
+import java.util.ArrayList;
+
 
 public class FileReader implements Service {
+    // private static String HOME = System.getProperty("user.home");
     private static String HOME = ".";
     String type;
     String file;
 
-    /**
-     * Constructor en donde a partir de un path se lee los archivos del disco duro
-     * del servidor
-     * @param path path que desamos leer un archivo o directorio
-     */
+
     public FileReader(String path) {
         String[] pathList = path.split("/");
         if (pathList.length < 3) {
             type = "html";
             Path filePath = Paths.get(HOME);
             String fileNames = "Directorios y archivos disponibles:<br>";
+
             try (DirectoryStream<Path> directoryStream = Files.newDirectoryStream(filePath)) {
                 for (Path files : directoryStream) {
                     if (!Files.isHidden(files)) {
@@ -52,6 +52,9 @@ public class FileReader implements Service {
                     file = fileNames;
                 } else if (Files.isRegularFile(filePath)) {
                     type = filePath.toString().split("\\.")[1];
+                    /**
+                     * En este try leemos un archivo como lista de bytes y lo guardamos como string
+                     */
                     try {
                         byte[] bs = Files.readAllBytes(filePath);
                         file = new String(bs);

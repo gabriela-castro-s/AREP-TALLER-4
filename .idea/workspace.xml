@@ -5,16 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7748e685-e7ff-4f1a-b14b-3f2767168173" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/InvokeMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/ServiceRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Components/FileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Components/ServiceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Services/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Spark/CreatedResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/SpringBoot/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/SpringBoot/MicroSpringBoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/SpringBoot/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arep/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arep/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arep/InvokeMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Run.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arep/ServiceRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Services/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Services/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Spark/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Spark/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Spark/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Spark/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Spark/Spark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arep/Spark/Spark.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +45,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2LsbkvXxY2HHlRjCgPOoIqejkED" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,9 +59,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/gabriela.castro/Documents/AREP-TALLER-3",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/waby0/OneDrive/Documents/UNIVERSIDAD/9 SEMESTRE/AREP/Talleres/Taller 4/AREP-TALLER-4",
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
@@ -55,7 +75,7 @@
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.eci.arep.App" />
-      <module name="AREP-TALLER-3" />
+      <module name="AREP-TALLER-4" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.eci.arep.*" />

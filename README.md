@@ -1,4 +1,4 @@
-# Taller 3 AREP
+# Taller 4 AREP
 
 ## Información del programa 💾
 
@@ -13,7 +13,9 @@ Fue desarrollado haciendo uso de la herramienta Spark de java.
 ```
 2. Ejecución de la aplicación, sobre la carpeta donde se encuentran los archivos haciendo uso del comando:
 ```
-   mvn clean package exec:java -D "exec.mainClass"="edu.eci.arep.App"
+   mvn clean install 
+   
+    java -cp "target/classes" edu.eci.arep.App edu.eci.arep.HttpServer
 ```
 3. Visualización de la aplicación usando el enlace http://localhost:35000/apps desde un buscador web, se recomienda usar Mozilla Firefox.
 
@@ -21,18 +23,6 @@ Fue desarrollado haciendo uso de la herramienta Spark de java.
 ```
     mvn javadoc:javadoc
 ```
-## Pruebas 🤓
-Probamos la aplicación en dos sistemas operativos para comprobar que corriera con normalidad en ambos.
-### Windows
-![captura 1 windows](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20pantalla%202023-02-16%20213538.png)
-![captura 2 windows](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20pantalla%202023-02-16%20213859.png)
-![captura 3 windows](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20pantalla%202023-02-16%20213945.png)
-![captura 4 windows](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20pantalla%202023-02-16%20214204.png)
-### MACOS
-![captura 1 MAC](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20Pantalla%202023-02-16%20a%20la(s)%209.59.52%20p.m..png)
-![captura 2 MAC](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20Pantalla%202023-02-16%20a%20la(s)%2010.00.17%20p.m..png)
-![captura 3 MAC](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20Pantalla%202023-02-16%20a%20la(s)%2010.00.56%20p.m..png)
-![captura 4 MAC](https://github.com/gabriela-castro-s/img/blob/master/Captura%20de%20Pantalla%202023-02-16%20a%20la(s)%209.59.20%20p.m..png)
 
 ## Requisitos 📋
 - Java: Ambiente de desarrollo
